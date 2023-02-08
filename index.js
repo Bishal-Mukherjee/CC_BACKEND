@@ -20,6 +20,10 @@ mongoose
   });
 mongoose.set("strictQuery", true);
 
+app.get("/", (req, res) => {
+  res.status(200).send("<h1>Server Working!</h1>");
+});
+
 // if (process.env.NODE_ENV === "production") {
 //   app.use(express.static("client/build"));
 
